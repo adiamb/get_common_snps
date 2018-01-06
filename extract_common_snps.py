@@ -1,6 +1,3 @@
-import re
-import subprocess
-from subprocess import PIPE
 import sys
 import time
 import argparse
