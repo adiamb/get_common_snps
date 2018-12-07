@@ -4,7 +4,6 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('file', type=argparse.FileType('r'), nargs='+', help='input a list of snplists from different GWAS batches', required=True)
 parser.add_argument('-out',required=True, help='outfile a stringname with a suffix .txt')
-args=parser.parse_args()
 
 def snp_extract(snplist):
 	global snp_
