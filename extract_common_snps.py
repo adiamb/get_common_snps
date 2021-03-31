@@ -30,11 +30,11 @@ missing =0
 with open(args.out, 'w') as f_out:
 	for key in all_snp[0].iterkeys():
 		if all(key in d for d in dic_list):
-			print key
+			print(key)
 			n += 1
 			f_out.write(key+'\n')
 		else:
 			print 'to throw'
 			missing += 1
 
-print 'matched ', str(n), 'SNPS and Discarded other ', str(missing), 'SNPS' 
+print('matched  {} SNPS and Discarded other {} SNPS'.format(n, missing))
