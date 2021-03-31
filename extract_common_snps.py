@@ -28,13 +28,13 @@ for n, value in enumerate(args.file):
 n=0
 missing =0
 with open(args.out, 'w') as f_out:
-	for key in all_snp[0].iterkeys():
+	for key in all_snp[0].keys():
 		if all(key in d for d in dic_list):
 			print(key)
 			n += 1
 			f_out.write(key+'\n')
 		else:
-			print 'to throw'
+			#print('to throw')
 			missing += 1
 
 print('matched  {} SNPS and Discarded other {} SNPS'.format(n, missing))
